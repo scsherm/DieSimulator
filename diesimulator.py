@@ -29,7 +29,7 @@ print("mean number of rolls (sum >= 20):", round(np.mean(roll_count1), 1))
 print("std number of rolls (sum >= 20):", round(np.std(roll_count1), 1))
 
 #Calculate mean and standard dev. for sum >= 10000
-for i in range(100000): #Ran simulation a few times 
+for i in range(100000): #Ran for loop a few times 
     die_sum, die_list, total_sum = die_sim(6,10000)
     carry_over2.append(die_sum - total_sum) #Calculate value over 10000
     roll_count2.append(len(die_list)) #Count number of rolls
